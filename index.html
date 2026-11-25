@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Claim Your $500 in Abercrombie & Fitch Savings | Abercrombie Rewards</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(135deg, #f4f1eb 0%, #e8e2d6 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 16px 40px;
+      color: #1a1a1a;
+    }
+    .online {
+      background: #fff;
+      border-radius: 999px;
+      padding: 6px 14px;
+      font-size: 13px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .dot {
+      width: 8px; height: 8px;
+      background: #22c55e;
+      border-radius: 50%;
+      animation: pulse 1.5s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+      max-width: 420px;
+      width: 100%;
+      padding: 32px 28px;
+      text-align: center;
+    }
+    .logo-wrap {
+      width: 240px;
+      height: 64px;
+      margin: 0 auto 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #0a2540;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .logo-text {
+      color: #fff;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-align: center;
+      line-height: 1.3;
+      text-transform: uppercase;
+    }
+    h1 {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.4;
+      margin-bottom: 8px;
+    }
+    h1 strong {
+      color: #0a2540;
+      font-weight: 700;
+    }
+    .steps-box {
+      background: #f8fafc;
+      border-radius: 12px;
+      margin: 24px 0;
+      text-align: left;
+      overflow: hidden;
+    }
+    .steps-header {
+      background: #e2e8f0;
+      padding: 12px 16px;
+      font-weight: 600;
+      font-size: 15px;
+    }
+    .step {
+      padding: 12px 16px;
+      border-bottom: 1px solid #e2e8f0;
+      font-size: 14px;
+      display: flex;
+      gap: 10px;
+    }
+    .step:last-child { border-bottom: none; }
+    .step-num {
+      color: #0a2540;
+      font-weight: 700;
+      min-width: 18px;
+    }
+    .cta {
+      display: block;
+      width: 100%;
+      background: linear-gradient(90deg, #0a2540, #061828);
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      padding: 16px;
+      font-size: 17px;
+      font-weight: 700;
+      cursor: pointer;
+      letter-spacing: 0.5px;
+      box-shadow: 0 4px 14px rgba(10,37,64,0.35);
+      transition: transform 0.15s, box-shadow 0.15s;
+      text-decoration: none;
+      text-align: center;
+    }
+    .cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 18px rgba(10,37,64,0.45);
+    }
+    .rating-card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+      max-width: 420px;
+      width: 100%;
+      margin-top: 20px;
+      padding: 20px;
+      text-align: center;
+    }
+    .stars { color: #22c55e; font-size: 22px; letter-spacing: 2px; margin-bottom: 6px; }
+    .rating-score { font-size: 18px; font-weight: 700; }
+    .rating-sub { font-size: 13px; color: #64748b; margin-top: 2px; }
+    .trustpilot {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      margin-top: 10px;
+      font-size: 13px;
+      color: #00b67a;
+      font-weight: 600;
+    }
+    .faq {
+      max-width: 420px;
+      width: 100%;
+      margin-top: 28px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+      padding: 24px;
+    }
+    .faq h2 {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #0a2540;
+      margin-bottom: 16px;
+      font-weight: 700;
+    }
+    .faq-item { margin-bottom: 16px; }
+    .faq-item h3 { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
+    .faq-item p { font-size: 13px; color: #475569; line-height: 1.5; }
+  </style>
+</head>
+<body>
+  <div class="online">
+    <span class="dot"></span>
+    <span id="online-count">841</span> online now
+  </div>
+
+  <div class="card">
+    <div class="logo-wrap">
+      <div class="logo-text">Abercrombie<br>& Fitch</div>
+    </div>
+    <h1>
+      Complete the steps below to claim your<br>
+      <strong>$500 in Abercrombie & Fitch savings</strong>
+    </h1>
+
+    <div class="steps-box">
+      <div class="steps-header">Steps to Qualify</div>
+      <div class="step"><span class="step-num">1.</span> Click on “Claim Now”</div>
+      <div class="step"><span class="step-num">2.</span> Enter your email and basic information</div>
+      <div class="step"><span class="step-num">3.</span> Complete 4–5 sponsored deals (required)</div>
+      <div class="step"><span class="step-num">4.</span> Claim your $500 in Abercrombie & Fitch savings</div>
+    </div>
+
+    <a href="https://giftclick.org/?offer_id=4663&aff_id=178257" class="cta">
+      CLAIM NOW
+    </a>
+  </div>
+
+  <div class="rating-card">
+    <div class="stars">★★★★★</div>
+    <div class="rating-score">4.9 out of 5</div>
+    <div class="rating-sub">Based on 2,156 reviews</div>
+    <div class="trustpilot">★ Trustpilot</div>
+  </div>
+
+  <div class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>Who is this offer for?</h3>
+      <p>Eligibility depends on the promotion partner’s current requirements. Review the terms shown on the next page before participating.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How much can I save?</h3>
+      <p>Eligible participants may qualify for $500 in Abercrombie & Fitch savings after completing the stated requirements.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What are sponsored deals?</h3>
+      <p>Sponsored deals are third-party offers that may include trials, subscriptions, purchases, or app activities. Each deal shows its own terms and any cost before you choose it.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How many deals do I need to complete?</h3>
+      <p>The promotion typically requires completing 4–5 qualifying deals. The exact rules appear on the partner’s eligibility page.</p>
+    </div>
+  </div>
+
+  <script>
+    setInterval(() => {
+      const el = document.getElementById('online-count');
+      let n = parseInt(el.textContent);
+      n += Math.floor(Math.random() * 5) - 2;
+      if (n < 710) n = 740;
+      if (n > 940) n = 910;
+      el.textContent = n;
+    }, 3000);
+  </script>
+</body>
+</html>
